@@ -3102,6 +3102,12 @@ declare module sequelize {
     logging?: boolean | Function;
 
     transaction?: Transaction;
+
+    /**
+     * Either an object of named parameter replacements in the format `:param` or an array of unnamed
+     * replacements to replace `?` in your SQL.
+     */
+     replacements?: Object | Array<string>;
   }
 
   /**
